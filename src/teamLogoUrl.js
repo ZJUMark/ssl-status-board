@@ -1,33 +1,23 @@
 const knownLogos = new Map([
-    ['ais', require('@/assets/logos/ais.png')],
-    ['blue', require('@/assets/logos/blue.png')],
-    ['cmμs', require('@/assets/logos/cmμs.png')],
-    ['er-force', require('@/assets/logos/er-force.png')],
-    ['immortals', require('@/assets/logos/immortals.png')],
-    ['kiks', require('@/assets/logos/kiks.png')],
-    ['mct-susano-logics', require('@/assets/logos/mct-susano-logics.png')],
-    ['mrl', require('@/assets/logos/mrl.png')],
-    ['namec', require('@/assets/logos/namec.png')],
-    ['neuislanders', require('@/assets/logos/neuislanders.png')],
-    ['op-amp', require('@/assets/logos/op-amp.png')],
-    ['robôcin', require('@/assets/logos/robocin.png')],
-    ['robodragons', require('@/assets/logos/robodragons.png')],
-    ['robofei', require('@/assets/logos/robofei.png')],
-    ['roboime', require('@/assets/logos/roboime.png')],
-    ['robojackets', require('@/assets/logos/robojackets.png')],
-    ['roboteam-twente', require('@/assets/logos/roboteam-twente.png')],
-    ['tigers-mannheim', require('@/assets/logos/tigers-mannheim.png')],
-    ['ubc-thunderbots', require('@/assets/logos/ubc-thunderbots.png')],
-    ['ultron', require('@/assets/logos/ultron.png')],
-    ['umass-minutebots', require('@/assets/logos/umass-minutebots.png')],
-    ['yellow', require('@/assets/logos/yellow.png')],
-    ['zjunlict', require('@/assets/logos/zjunlict.png')],
+    ['Test', require('@/assets/logos/test.png')],
+    ['ZJUNlict', require('@/assets/logos/zjunlict.png')],
+    ['SRC赛队', require('@/assets/logos/src.png')],
+    ['编译错误', require('@/assets/logos/bycw.png')],
+    ['StepForwards', require('@/assets/logos/step.png')],
+    ['简单难度的电脑', require('@/assets/logos/jdnd.png')],
+    ['江苏海洋大学1队', require('@/assets/logos/jshy.png')],
+    ['黄河1号', require('@/assets/logos/hhyh.png')],
+    ['CUGB', require('@/assets/logos/cugb.png')],
+    ['CUGB2', require('@/assets/logos/cugb.png')],
+    ['空指针异常', require('@/assets/logos/null.png')],
+    ['ZJUTKnights', require('@/assets/logos/zjutk.png')],
+    ['请求超时', require('@/assets/logos/qqcs.png')]
 ]);
 
 import defaultLogo from '@/assets/logos/no-logo.png';
 
 const teamLogoUrl = function (teamName) {
-    const logoBaseName = teamName.toLowerCase().replace(' ', '-');
+    const logoBaseName = teamName;
     const logoPath = knownLogos.get(logoBaseName);
     if (logoPath !== undefined) {
         return logoPath;
